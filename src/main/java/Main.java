@@ -14,6 +14,8 @@ public class Main {
 
         Car c2 = new Car("Mazda");
 
+        Car c3 = new Car("Citroen");
+
         Truck t1 = new Truck();
         t1.model = "KAMAZ";
         t1.getFuelAmount();
