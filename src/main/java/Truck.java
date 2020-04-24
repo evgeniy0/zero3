@@ -7,7 +7,7 @@ public class Truck extends Car {
 
     @Override
     public double getFuelAmount() {
-        if (this.getFuelAmount()<50.0){
+        if (this.fuel<50.0){
             return super.getFuelAmount();
         }
         else{
