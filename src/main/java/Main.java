@@ -24,10 +24,15 @@ public class Main {
 
         DieselGenerator dg = new DieselGenerator();
 
+        Gudit gudelka = new Gudit() {
+            public void run() {
+                System.out.println("FAKE GUDELKA");
+            }
+        };
 
         Gudit[] garage = new Gudit[4];
         garage[0] = c1;
-        garage[1] = c2;
+        garage[1] = gudelka;
         garage[2] = t1;
         garage[3] = dg;
 
@@ -35,6 +40,10 @@ public class Main {
         for (Gudit each : garage){
             each.run();
         }
+
+        System.out.println("FuelStations:");
+        FuelStation f1 = FuelStation.getFuelStationInstance();
+        FuelStation f2 = FuelStation.getFuelStationInstance();
 
     }
 }
